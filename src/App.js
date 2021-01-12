@@ -22,7 +22,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <BrowserRouter>
           <Switch location={location} key={location.pathname}>
-            <Route path="/" exact>
+            <Route path="/website" exact>
               <AboutUs />
             </Route>
             <Route path="/projects" exact>
