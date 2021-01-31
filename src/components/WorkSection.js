@@ -2,67 +2,123 @@ import React from 'react';
 
 //Images
 import money from '../img/money.svg';
+import teamwork from '../img/teamwork.svg';
 //Styles 
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
 import { useScroll } from './useScroll';
 import { scrollReveal } from '../animation'
 
+//Animation
+import { motion } from 'framer-motion';
+import { titleAnim, fade, photoAnim } from '../animation';
+
+//Timeline
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+
 const WorkSection = () => {
     const [element, controls] = useScroll();
     return (
         <Work>
-
             <Description>
-                <h2>Work History</h2>
-                <Cards>
-                    <Card>
-                        <div className="icon">
-                            <img src={money} alt="" />
-                            <h3>Quadrical.Ai</h3>
-                        </div>
-                        <p>Machine Learning Coop</p>
-
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={money} alt="" />
-                            <h3>Magnet Forensics</h3>
-                        </div>
-                        <p>Software Developer Co-op</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={money} alt="" />
-                            <h3>CIBC</h3>
-                        </div>
-
-                        <p>Software Developer Co-op</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={money} alt="" />
-                            <h3>The Co-operators</h3>
-                        </div>
-                        <p>Software Developer Co-op</p>
-                    </Card>
-                </Cards>
+                <motion.h2 variants={titleAnim}>Work History</motion.h2>
+                <Timeline align="alternate">
+                    <TimelineItem>
+                        <TimelineOppositeContent>
+                            <p>2021</p>
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineDot color="secondary" variant="outlined" />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <Card>
+                                <motion.div className="icon" variants={fade}>
+                                    <a href="https://www.schedulock.com/" target="_blank">Schedulock</a>
+                                    <p>FullStack Developer</p>
+                                    <p>React, Java Spring Framework</p>
+                                </motion.div>
+                            </Card>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineOppositeContent>
+                            <p>2020</p>
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineDot color="primary" variant="outlined" />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <Card>
+                                <div className="icon">
+                                    <a href="https://www.schedulock.com/" target="_blank">Quadrical.Ai</a>
+                                </div>
+                                <p>Machine Learning Co-op</p>
+                            </Card>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineOppositeContent>
+                            <p>2018</p>
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineDot color="secondary" variant="outlined" />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <Card>
+                                <div className="icon">
+                                    <a href="https://www.schedulock.com/" target="_blank" rel="noopener noreferrer">Magnet Forensics</a>
+                                </div>
+                                <p>Software Developer Co-op</p>
+                            </Card>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineOppositeContent>
+                            <p>2017</p>
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineDot color="primary" variant="outlined" />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <Card>
+                                <div className="icon">
+                                    <a href="https://www.schedulock.com/" target="_blank" rel="noopener noreferrer">CIBC Live Labs</a>
+                                </div>
+                                <p>Software Developer Co-op</p>
+                            </Card>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot color="secondary" variant="outlined" />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <Card>
+                                <div className="icon">
+                                    <a href="https://www.schedulock.com/" target="_blank" rel="noopener noreferrer">The Co-operators</a>
+                                </div>
+                                <p>Software Developer Co-op</p>
+                            </Card>
+                        </TimelineContent>
+                    </TimelineItem>
+                </Timeline>
             </Description>
         </Work>
     )
 }
 
-
 const Work = styled(About)`    
-    flex-direction:column;
-    h2{
-        padding-bottom: 5rem;
-        text-align: left;
-    }
-    p{
-        width: 70%;
-        padding: 2rem 0rem 4rem 0rem;
-    }
+    align-items: flex-start;
 `;
 const Cards = styled.div`
     display:flex;
@@ -73,25 +129,30 @@ const Cards = styled.div`
     } 
 `;
 const Card = styled.div`
-    flex-basis: 5rem;
+    flex-basis: auto;
+    margin-bottom: 5rem;
+    padding:2rem;
+    border: solid #23D997;
+    border-width: 1px;
+    border-radius: 30px;
     .icon{
-        display:flex;
         align-items: center;
-    h3{
+    a{
+        font-size: 30px;
         margin-left: 1rem;
-        color:white;
+        color:#23D997;
         padding:1rem;
-        text-decoration: underline;
-
-    }}
+        border-bottom-color: coral;
+        text-decoration: none;
+    }
+    a:hover{color:#1a9b5d;}
+    }
     p{
         color:white;
         padding:1rem;
         margin-left:1rem;
-        white-space: pre-wrap;
-
+        white-space: nowrap;
     }
     
 `;
-
 export default WorkSection;
