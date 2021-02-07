@@ -32,10 +32,14 @@ export const Image = styled.div`
     flex:1;
     overflow: hidden;
     z-index:2;
+    margin-left: 2rem;
     img{
         width: 100%;
-        height: 80vh;
+        height: auto;
+        filter: grayscale(30%);
+        filter: contrast(100%);
         object-fit: cover;
+        border-radius: 20%;
     }
 `;
 export const Hide = styled.div`

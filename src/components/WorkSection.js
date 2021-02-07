@@ -1,17 +1,14 @@
 import React from 'react';
 
-//Images
-import money from '../img/money.svg';
-import teamwork from '../img/teamwork.svg';
 //Styles 
-import { About, Description, Image } from "../styles";
+import { About, Description } from "../styles";
 import styled from "styled-components";
 import { useScroll } from './useScroll';
 import { scrollReveal } from '../animation'
 
 //Animation
 import { motion } from 'framer-motion';
-import { titleAnim, fade, photoAnim } from '../animation';
+import { titleAnim, fade } from '../animation';
 
 //Timeline
 import Timeline from '@material-ui/lab/Timeline';
@@ -40,9 +37,9 @@ const WorkSection = () => {
                         <TimelineContent>
                             <Card>
                                 <motion.div className="icon" variants={fade}>
-                                    <a href="https://www.schedulock.com/" target="_blank">Schedulock</a>
+                                    <a href="https://www.schedulock.com/" target="_blank" rel="noreferrer">Schedulock</a>
                                     <p>FullStack Developer</p>
-                                    <p>React, Java Spring Framework</p>
+                                    <p>Developed new features for React Website. Implemented API  in Java Spring Framework</p>
                                 </motion.div>
                             </Card>
                         </TimelineContent>
@@ -58,9 +55,10 @@ const WorkSection = () => {
                         <TimelineContent>
                             <Card>
                                 <div className="icon">
-                                    <a href="https://www.schedulock.com/" target="_blank">Quadrical.Ai</a>
+                                    <a href="https://www.quadrical.ai/" target="_blank" rel="noreferrer">Quadrical.Ai</a>
                                 </div>
                                 <p>Machine Learning Co-op</p>
+                                <p>Created an Machine Learning model using Neural Networks to build Andriod Application. </p>
                             </Card>
                         </TimelineContent>
                     </TimelineItem>
@@ -75,15 +73,16 @@ const WorkSection = () => {
                         <TimelineContent>
                             <Card>
                                 <div className="icon">
-                                    <a href="https://www.schedulock.com/" target="_blank" rel="noopener noreferrer">Magnet Forensics</a>
+                                    <a href="https://www.magnetforensics.com/" target="_blank" rel="noreferrer">Magnet Forensics</a>
                                 </div>
                                 <p>Software Developer Co-op</p>
+                                <p>Worked in Data Science team to train image recognition model. Built MongoDB store to classify and store images.</p>
                             </Card>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            <p>2017</p>
+                            <p>2018</p>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot color="primary" variant="outlined" />
@@ -92,22 +91,27 @@ const WorkSection = () => {
                         <TimelineContent>
                             <Card>
                                 <div className="icon">
-                                    <a href="https://www.schedulock.com/" target="_blank" rel="noopener noreferrer">CIBC Live Labs</a>
+                                    <a href="https://www.cibc.com/en/personal-banking.html/" target="_blank" rel="noreferrer">CIBC Live Labs</a>
                                 </div>
                                 <p>Software Developer Co-op</p>
+                                <p>Developed mobile application for office room bookings</p>
                             </Card>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
+                        <TimelineOppositeContent>
+                            <p>2017</p>
+                        </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot color="secondary" variant="outlined" />
                         </TimelineSeparator>
                         <TimelineContent>
                             <Card>
                                 <div className="icon">
-                                    <a href="https://www.schedulock.com/" target="_blank" rel="noopener noreferrer">The Co-operators</a>
+                                    <a href="https://www.cooperators.ca/" target="_blank" rel="noreferrer">The Co-operators</a>
                                 </div>
                                 <p>Software Developer Co-op</p>
+                                <p>Developed chatbot using the Microsoft Bot Framework to replicate insurance claims</p>
                             </Card>
                         </TimelineContent>
                     </TimelineItem>
@@ -119,14 +123,6 @@ const WorkSection = () => {
 
 const Work = styled(About)`    
     align-items: flex-start;
-`;
-const Cards = styled.div`
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    @media (max-width: 1300px){
-        justify-content: center;
-    } 
 `;
 const Card = styled.div`
     flex-basis: auto;
@@ -144,6 +140,7 @@ const Card = styled.div`
         padding:1rem;
         border-bottom-color: coral;
         text-decoration: none;
+
     }
     a:hover{color:#1a9b5d;}
     }
@@ -151,7 +148,10 @@ const Card = styled.div`
         color:white;
         padding:1rem;
         margin-left:1rem;
-        white-space: nowrap;
+        white-space: wrap;
+         @media (max-width:1900px){
+            
+        };
     }
     
 `;
