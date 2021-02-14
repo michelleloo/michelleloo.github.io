@@ -13,19 +13,22 @@ const AboutSection = () => {
     return (
         <About>
             <Description>
-                <motion.div>
-                    <Hide>
-                        <motion.h2 variants={titleAnim}>Hi! My name</motion.h2>
-                    </Hide>
-                    <Hide>
-                        <motion.h2 variants={titleAnim}>is <span>Michelle Loo</span> and <br />I am a</motion.h2>
+                <Title>
 
-                    </Hide>
-                    <Hide>
-                        <motion.h2 variants={titleAnim}>Software Developer</motion.h2>
-                    </Hide>
-                </motion.div>
-                <motion.p variants={fade}>I am a recent Computer Science and Business Administration graduate. I specialize in full stack and front-end development with an interest in ML and design.</motion.p>
+                    <motion.div>
+                        <Hide>
+                            <motion.h2 variants={titleAnim}>Hi! My name</motion.h2>
+                        </Hide>
+                        <Hide>
+                            <motion.h2 variants={titleAnim}>is <span>Michelle Loo</span> and <br />I am a</motion.h2>
+
+                        </Hide>
+                        <Hide>
+                            <motion.h2 variants={titleAnim}>Software Developer</motion.h2>
+                        </Hide>
+                    </motion.div>
+                    <motion.p variants={fade}>I am a recent Computer Science and Business Administration graduate. I specialize in full stack and front-end development with an interest in ML and design.</motion.p>
+                </Title>
                 <Buttons>
                     <motion.button variants={fade}><a href="https://www.linkedin.com/in/michelle-loo/" target="_blank" rel="noreferrer" >LinkedIn</a></motion.button>
                     <motion.button variants={fade}><a href="https://github.com/michelleloo" target="_blank" rel="noreferrer">Github</a></motion.button>
@@ -45,8 +48,19 @@ const AboutSection = () => {
         </About>
     );
 }
+const Title = styled.div`
+    @media (max-width: 700px){
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    } 
+`;
 const Buttons = styled.div`
     button{
+        width: 10rem;
         margin-left: 1rem;
         border-radius: 1rem;
     }    

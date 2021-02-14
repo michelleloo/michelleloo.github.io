@@ -24,106 +24,154 @@ const WorkSection = () => {
     return (
         <Work>
             <Description>
-                <motion.h2 variants={titleAnim}>Work History</motion.h2>
-                <Timeline align="alternate">
-                    <TimelineItem>
-                        <TimelineOppositeContent>
-                            <p>2021</p>
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineDot color="secondary" variant="outlined" />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card>
-                                <motion.div className="icon" variants={fade}>
-                                    <a href="https://www.schedulock.com/" target="_blank" rel="noreferrer">Schedulock</a>
-                                    <p>FullStack Developer</p>
-                                    <p>Developed new features for React Website. Implemented API  in Java Spring Framework</p>
-                                </motion.div>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineOppositeContent>
-                            <p>2020</p>
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineDot color="primary" variant="outlined" />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card>
-                                <div className="icon">
-                                    <a href="https://www.quadrical.ai/" target="_blank" rel="noreferrer">Quadrical.Ai</a>
-                                </div>
-                                <p>Machine Learning Co-op</p>
-                                <p>Created an Machine Learning model using Neural Networks to build Andriod Application. </p>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineOppositeContent>
-                            <p>2018</p>
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineDot color="secondary" variant="outlined" />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card>
-                                <div className="icon">
-                                    <a href="https://www.magnetforensics.com/" target="_blank" rel="noreferrer">Magnet Forensics</a>
-                                </div>
-                                <p>Software Developer Co-op</p>
-                                <p>Worked in Data Science team to train image recognition model. Built MongoDB store to classify and store images.</p>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineOppositeContent>
-                            <p>2018</p>
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineDot color="primary" variant="outlined" />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card>
-                                <div className="icon">
-                                    <a href="https://www.cibc.com/en/personal-banking.html/" target="_blank" rel="noreferrer">CIBC Live Labs</a>
-                                </div>
-                                <p>Software Developer Co-op</p>
-                                <p>Developed mobile application for office room bookings</p>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineOppositeContent>
-                            <p>2017</p>
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineDot color="secondary" variant="outlined" />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card>
-                                <div className="icon">
-                                    <a href="https://www.cooperators.ca/" target="_blank" rel="noreferrer">The Co-operators</a>
-                                </div>
-                                <p>Software Developer Co-op</p>
-                                <p>Developed chatbot using the Microsoft Bot Framework to replicate insurance claims</p>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                </Timeline>
+                <h2>Work History</h2>
+                <TimelineDisplay>
+                    <Timeline align="alternate">
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2021</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="secondary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://www.schedulock.com/" target="_blank" rel="noreferrer">Schedulock</a>
+                                        <p>FullStack Developer</p>
+                                        <p>Developed new features for React Website. Implemented API  in Java Spring Framework</p>
+                                    </div>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2020</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://www.quadrical.ai/" target="_blank" rel="noreferrer">Quadrical.Ai</a>
+                                    </div>
+                                    <p>Machine Learning Co-op</p>
+                                    <p>Created an Machine Learning model using Neural Networks to build Andriod Application. </p>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2018</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="secondary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://www.magnetforensics.com/" target="_blank" rel="noreferrer">Magnet Forensics</a>
+                                    </div>
+                                    <p>Software Developer Co-op</p>
+                                    <p>Worked in Data Science team to train image recognition model. Built MongoDB store to classify and store images.</p>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2018</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://www.cibc.com/en/personal-banking.html/" target="_blank" rel="noreferrer">CIBC Live Labs</a>
+                                    </div>
+                                    <p>Software Developer Co-op</p>
+                                    <p>Developed mobile application for office room bookings</p>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2017</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="secondary" variant="outlined" />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://www.cooperators.ca/" target="_blank" rel="noreferrer">The Co-operators</a>
+                                    </div>
+                                    <p>Software Developer Co-op</p>
+                                    <p>Developed chatbot using the Microsoft Bot Framework to replicate insurance claims</p>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                    </Timeline></TimelineDisplay>
+                <Cards>
+                    <Card>
+                        <div className="icon">
+                            <h3>Quadrical.Ai</h3>
+                        </div>
+                        <p>Machine Learning Coop</p>
+
+                    </Card>
+                    <Card>
+                        <div className="icon">
+                        </div>
+                        <p>Software Developer Co-op</p>
+                    </Card>
+                    <Card>
+                        <div className="icon">
+                            <h3>CIBC</h3>
+                        </div>
+                        <p>Software Developer Co-op</p>
+                    </Card>
+                    <Card>
+                        <div className="icon">
+                            <h3>The Co-operators</h3>
+                        </div>
+                        <p>Software Developer Co-op</p>
+                    </Card>
+                </Cards>
             </Description>
         </Work>
     )
 }
 
+const Cards = styled.div`
+    margin-top:6rem;
+    flex-wrap:wrap;
+    flex-direction:column;
+    visibility:hidden;
+    display:None;
+    @media (max-width: 1300px){
+        visibility: visible;
+        display:flex;
+    } 
+`;
+const TimelineDisplay = styled.div`
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    visibility:visible;
+    @media (max-width: 1300px){
+        display:None;
+    } 
+`;
 const Work = styled(About)`    
     align-items: flex-start;
 `;
+
 const Card = styled.div`
     flex-basis: auto;
     margin-bottom: 5rem;

@@ -62,7 +62,7 @@ export const slider = {
     show: {
         x: '100%',
         skew: '0deg',
-        transition: { ease: 'easeOut', duration: 1 },
+        transition: { ease: 'easeOut', duration: 0.5 },
     }
 };
 export const sliderContainer = {

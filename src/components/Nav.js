@@ -41,6 +41,7 @@ const StyledNav = styled.nav`
     top:0;
     z-index:10;
 
+
     a{
         color:white;
         text-decoration: none;
@@ -61,7 +62,7 @@ const StyledNav = styled.nav`
     }
     @media (max-width: 1300px){
         flex-direction: column;
-        padding:5rem 2rem;
+        padding:2rem 2rem;
         #logo{
             display:inline-block;
             margin: 1rem;
