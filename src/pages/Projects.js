@@ -5,14 +5,18 @@ import { MovieState } from '../projectState';
 import { Link } from "react-router-dom";
 
 //Animation
-import athlete from '../img/athlete-small.png';
-import theracer from '../img/theracer-small.png';
-import goodtimes from '../img/goodtimes-small.png';
+import chatbot from '../img/chatbot.png';
+import musicplayer from '../img/music-player.png';
+import kaggle from '../img/kaggle.png';
 import { motion } from 'framer-motion';
 import { ProjectState } from '../projectState';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "../animation";
 
 const Projects = () => {
+    function redirectClick(url) {
+        // do something meaningful, Promises, if/else, whatever, and then
+        window.open(url, '_blank');
+    }
     return (
         <Work
             variants={pageAnimation}
@@ -30,29 +34,46 @@ const Projects = () => {
             <Movie>
                 <motion.h2 variants={fade}>React Music Player</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Movie>
-                    <motion.h2 variants={fade}>The Athlete</motion.h2>
-                    <motion.div variants={lineAnim} className="line"></motion.div>
-                    <Link to="/work/the-athlete">
-                        <Hide>
-                            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
-                        </Hide>
-                    </Link>
-                </Movie>
-                <Movie>
-                    <motion.h2>The Racer</motion.h2>
-                    <motion.div className="line" variants={lineAnim}></motion.div>
-                    <Link to="/work/the-racer">
-                        <img src={theracer} alt="athlete" />
-                    </Link>
-                </Movie>
-                <Movie>
-                    <motion.h2>Good Times</motion.h2>
-                    <motion.div className="line" variants={lineAnim}></motion.div>
-                    <Link to="/work/good-times">
-                        <img src={goodtimes} alt="athlete" />
-                    </Link>
-                </Movie>
+                <Project>
+                    <Hide>
+                        <motion.p variants={fade}>Project was used to learn about React. Music is pulled from copyright free music. I use this sometimes to study.</motion.p>
+                        <Buttons>
+                            <motion.button variants={fade} onClick={() => redirectClick("https://github.com/michelleloo/react-player/")}>Code</motion.button>
+                            <motion.button variants={fade} onClick={() => redirectClick("https://michelleloo.github.io/react-player/")}>Live</motion.button>
+                        </Buttons>
+                    </Hide>
+                    <Hide>
+                        <motion.img variants={photoAnim} src={musicplayer} alt="music player" />
+                    </Hide>
+                </Project>
+                <motion.h2 variants={fade}>Consumption Prediction</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Project>
+                    <Hide>
+                        <motion.p>An AI Model built on Kaggle that tries to predict whether a student is an above average drinker (weekly).
+                        Uses Pandas library & Sklearn's decision models
+                        Also contains our own implementation of a linear regression model.</motion.p>
+                        <Buttons>
+                            <motion.button variants={fade} onClick={() => redirectClick("https://www.kaggle.com/syleehs/kernel0e566615e7/notebook")}>Code</motion.button>
+                        </Buttons>
+                    </Hide>
+                    <Hide>
+                        <motion.img variants={photoAnim} src={kaggle} alt="music player" />
+                    </Hide>
+                </Project>
+                <motion.h2 variants={fade}>Schedule-It</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Project>
+                    <Hide>
+                        <motion.p>Node.JS chatbot built with the Microsoft Bot Framework. Used LUIS API to train NPL model and to converse with a chatbot to create appointments.</motion.p>
+                        <Buttons>
+                            <motion.button variants={fade} onClick={() => redirectClick("https://github.com/michelleloo/schedule-it")}>Code</motion.button>
+                        </Buttons>
+                    </Hide>
+                    <Hide>
+                        <motion.img variants={photoAnim} src={chatbot} alt="music player" />
+                    </Hide>
+                </Project>
             </Movie>
         </Work>
 
@@ -81,13 +102,32 @@ const Movie = styled(motion.div)`
     }
     img{
         width: 100%;
-        height: 70vh;
         object-fit:cover;
     }
     h2{
         color: #ffffff;
     }
 `;
+const Project = styled.div`    
+    display:grid;
+    grid-template-columns:  50% 50%;
+    margin-bottom: 5rem;
+`
+const Buttons = styled.div`
+    button{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+        margin-left: 1rem;
+        border-radius: 1rem;
+        color:#23D997;
+        text-decoration: none;
+        font-size:1.1rem;
+    }    
+    button:hover{
+        color:#1a9b5d;
+    }    
+`
 const Hide = styled.div`
     overflow:hidden;
 `;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GlobalStyle from './components/GlobalStyles';
 
 //Import Pages
@@ -13,6 +13,10 @@ import { Switch, Route, useLocation, BrowserRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  useEffect(() => {
+    let title = "Michelle Loo"
+    document.title = title;
+  });;
   const location = useLocation();
   console.log(location);
   return (

@@ -123,6 +123,7 @@ const WorkSection = () => {
                             <h3>Quadrical.Ai</h3>
                         </div>
                         <p>Machine Learning Coop</p>
+                        <p>Created an Machine Learning model using Neural Networks to build Andriod Application.</p>
 
                     </Card>
                     <Card>
@@ -190,7 +191,6 @@ const Card = styled.div`
         text-decoration: none;
 
     }
-    a:hover{color:#1a9b5d;}
     }
     p{
         color:white;

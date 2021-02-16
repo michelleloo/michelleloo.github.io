@@ -39,8 +39,14 @@ export const Image = styled.div`
         filter: grayscale(30%);
         filter: contrast(100%);
         object-fit: cover;
-        border-radius: 20%;
+        border-radius: 30%;
+        
     }
+    @media (max-width: 700px){
+        img{
+            width: 60%;
+        }
+    } 
 `;
 export const Hide = styled.div`
     overflow: hidden;
