@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.76384844.chunk.js",
-    "main.js.map": "/static/js/main.76384844.chunk.js.map",
+    "main.js": "/static/js/main.782d849a.chunk.js",
+    "main.js.map": "/static/js/main.782d849a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0fc6e705.js",
     "runtime-main.js.map": "/static/js/runtime-main.0fc6e705.js.map",
-    "static/js/2.0809a5f2.chunk.js": "/static/js/2.0809a5f2.chunk.js",
-    "static/js/2.0809a5f2.chunk.js.map": "/static/js/2.0809a5f2.chunk.js.map",
+    "static/js/2.c92c6423.chunk.js": "/static/js/2.c92c6423.chunk.js",
+    "static/js/2.c92c6423.chunk.js.map": "/static/js/2.c92c6423.chunk.js.map",
     "static/js/3.da5655ad.chunk.js": "/static/js/3.da5655ad.chunk.js",
     "static/js/3.da5655ad.chunk.js.map": "/static/js/3.da5655ad.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.0809a5f2.chunk.js.LICENSE.txt": "/static/js/2.0809a5f2.chunk.js.LICENSE.txt",
+    "static/js/2.c92c6423.chunk.js.LICENSE.txt": "/static/js/2.c92c6423.chunk.js.LICENSE.txt",
     "static/media/athlete-small.9c7a85d4.png": "/static/media/athlete-small.9c7a85d4.png",
     "static/media/athlete2.b216a5ad.png": "/static/media/athlete2.b216a5ad.png",
     "static/media/chatbot.5abc4523.png": "/static/media/chatbot.5abc4523.png",
@@ -24,7 +24,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0fc6e705.js",
-    "static/js/2.0809a5f2.chunk.js",
-    "static/js/main.76384844.chunk.js"
+    "static/js/2.c92c6423.chunk.js",
+    "static/js/main.782d849a.chunk.js"
   ]
 }
