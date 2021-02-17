@@ -13,6 +13,10 @@ import { ProjectState } from '../projectState';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "../animation";
 
 const Projects = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     function redirectClick(url) {
         // do something meaningful, Promises, if/else, whatever, and then
         window.open(url, '_blank');
@@ -112,6 +116,9 @@ const Project = styled.div`
     display:grid;
     grid-template-columns:  50% 50%;
     margin-bottom: 5rem;
+    @media (max-width: 700px){
+        grid-template-columns: 100;
+    } 
 `
 const Buttons = styled.div`
     button{

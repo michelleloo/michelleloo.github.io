@@ -39,8 +39,8 @@ const WorkSection = () => {
                                 <Card>
                                     <div className="icon">
                                         <a href="https://www.schedulock.com/" target="_blank" rel="noreferrer">Schedulock</a>
-                                        <p>FullStack Developer</p>
-                                        <p>Developed new features for React Website. Implemented API  in Java Spring Framework</p>
+                                        <p>Full Stack Developer</p>
+                                        <p>Developed new features for React Website. Back End features built with JavaSpring Framework</p>
                                     </div>
                                 </Card>
                             </TimelineContent>
@@ -120,6 +120,14 @@ const WorkSection = () => {
                 <Cards>
                     <Card>
                         <div className="icon">
+                            <h3>Schedulock</h3>
+                        </div>
+                        <p>Full Stack Developer</p>
+                        <p>Developed new features for React Website. Back End features built with JavaSpring Framework</p>
+
+                    </Card>
+                    <Card>
+                        <div className="icon">
                             <h3>Quadrical.Ai</h3>
                         </div>
                         <p>Machine Learning Coop</p>
@@ -128,20 +136,24 @@ const WorkSection = () => {
                     </Card>
                     <Card>
                         <div className="icon">
+                            <h3>Magnet Forensics</h3>
                         </div>
                         <p>Software Developer Co-op</p>
+                        <p>Worked in Data Science team to train image recognition model. Built MongoDB store to classify and store images.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <h3>CIBC</h3>
+                            <h3>CIBC Live Labs</h3>
                         </div>
                         <p>Software Developer Co-op</p>
+                        <p>Developed mobile application for office room bookings</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <h3>The Co-operators</h3>
                         </div>
                         <p>Software Developer Co-op</p>
+                        <p>Developed chatbot using the Microsoft Bot Framework to replicate insurance claims</p>
                     </Card>
                 </Cards>
             </Description>
@@ -158,6 +170,7 @@ const Cards = styled.div`
     @media (max-width: 1300px){
         visibility: visible;
         display:flex;
+        
     } 
 `;
 const TimelineDisplay = styled.div`
@@ -197,10 +210,9 @@ const Card = styled.div`
         padding:1rem;
         margin-left:1rem;
         white-space: wrap;
-         @media (max-width:1900px){
-            
-        };
     }
-    
+    h3{
+        font-size: 1.5rem;
+    }
 `;
 export default WorkSection;

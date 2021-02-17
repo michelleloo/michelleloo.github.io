@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 import home1 from '../img/home1.jpg'
@@ -13,6 +13,9 @@ import { motion } from 'framer-motion';
 import { titleAnim, fade, photoAnim } from '../animation';
 import Wave from "./Wave";
 const AboutSection = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     function redirectClick(url) {
         // do something meaningful, Promises, if/else, whatever, and then
         window.open(url, '_blank');
@@ -73,6 +76,9 @@ const Buttons = styled.div`
         font-size: 15px;
         color:#23D997;
         text-decoration: none;
+        @media (max-width: 700px){
+            margin-left:0rem;
+        } 
     }
     button:hover{
         color:#1a9b5d;
