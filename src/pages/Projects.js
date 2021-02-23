@@ -40,7 +40,7 @@ const Projects = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Project>
                     <Hide>
-                        <motion.p variants={fade}>Project was used to learn about React. Music is pulled from copyright free music. I use this sometimes to study.</motion.p>
+                        <motion.p variants={fade}>Music is pulled from copyright free music. Purpose was to design simple UI that I could use when needed to focus.</motion.p>
                         <Buttons>
                             <motion.button variants={fade} onClick={() => redirectClick("https://github.com/michelleloo/react-player/")}>Code</motion.button>
                             <motion.button variants={fade} onClick={() => redirectClick("https://michelleloo.github.io/react-player/")}>Live</motion.button>
