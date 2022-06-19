@@ -1,30 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.d1fa935f.chunk.js",
-    "main.js.map": "/static/js/main.d1fa935f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0fc6e705.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0fc6e705.js.map",
-    "static/js/2.c92c6423.chunk.js": "/static/js/2.c92c6423.chunk.js",
-    "static/js/2.c92c6423.chunk.js.map": "/static/js/2.c92c6423.chunk.js.map",
-    "static/js/3.da5655ad.chunk.js": "/static/js/3.da5655ad.chunk.js",
-    "static/js/3.da5655ad.chunk.js.map": "/static/js/3.da5655ad.chunk.js.map",
+    "main.js": "/static/js/main.5fbe58a8.chunk.js",
+    "main.js.map": "/static/js/main.5fbe58a8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ebe48bfa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ebe48bfa.js.map",
+    "static/js/2.6559718b.chunk.js": "/static/js/2.6559718b.chunk.js",
+    "static/js/2.6559718b.chunk.js.map": "/static/js/2.6559718b.chunk.js.map",
+    "static/js/3.d292acba.chunk.js": "/static/js/3.d292acba.chunk.js",
+    "static/js/3.d292acba.chunk.js.map": "/static/js/3.d292acba.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.c92c6423.chunk.js.LICENSE.txt": "/static/js/2.c92c6423.chunk.js.LICENSE.txt",
-    "static/media/athlete-small.9c7a85d4.png": "/static/media/athlete-small.9c7a85d4.png",
-    "static/media/athlete2.b216a5ad.png": "/static/media/athlete2.b216a5ad.png",
+    "static/js/2.6559718b.chunk.js.LICENSE.txt": "/static/js/2.6559718b.chunk.js.LICENSE.txt",
     "static/media/chatbot.5abc4523.png": "/static/media/chatbot.5abc4523.png",
-    "static/media/good-times2.4ea1be17.jpg": "/static/media/good-times2.4ea1be17.jpg",
-    "static/media/goodtimes-small.94ab060d.png": "/static/media/goodtimes-small.94ab060d.png",
     "static/media/home1.c5ae0288.jpg": "/static/media/home1.c5ae0288.jpg",
     "static/media/kaggle.035f91ad.png": "/static/media/kaggle.035f91ad.png",
-    "static/media/linkedin.b6350964.svg": "/static/media/linkedin.b6350964.svg",
-    "static/media/music-player.f701401c.png": "/static/media/music-player.f701401c.png",
-    "static/media/the-racer2.580f15cd.jpg": "/static/media/the-racer2.580f15cd.jpg",
-    "static/media/theracer-small.51874213.png": "/static/media/theracer-small.51874213.png"
+    "static/media/linkedin.784c1d72.svg": "/static/media/linkedin.784c1d72.svg",
+    "static/media/music-player.f701401c.png": "/static/media/music-player.f701401c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fc6e705.js",
-    "static/js/2.c92c6423.chunk.js",
-    "static/js/main.d1fa935f.chunk.js"
+    "static/js/runtime-main.ebe48bfa.js",
+    "static/js/2.6559718b.chunk.js",
+    "static/js/main.5fbe58a8.chunk.js"
   ]
 }
