@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import { MovieState } from '../projectState';
 import { Link } from "react-router-dom";
 
 //Animation
@@ -9,7 +8,6 @@ import chatbot from '../img/chatbot.png';
 import musicplayer from '../img/music-player.png';
 import kaggle from '../img/kaggle.png';
 import { motion } from 'framer-motion';
-import { ProjectState } from '../projectState';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "../animation";
 
 const Projects = () => {

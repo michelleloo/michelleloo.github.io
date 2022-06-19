@@ -18,7 +18,6 @@ function App() {
     document.title = title;
   });;
   const location = useLocation();
-  console.log(location);
   return (
     <div className="App">
       <GlobalStyle />
@@ -38,7 +37,6 @@ function App() {
           </Switch>
         </BrowserRouter>
       </AnimatePresence>
-
     </div >
   );
 }

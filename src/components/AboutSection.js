@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom'
 
 import home1 from '../img/home1.jpg'
 
@@ -7,7 +6,6 @@ import styled from "styled-components";
 //Stlyes
 import { About, Description, Image, Hide } from '../styles';
 
-import { useHistory } from 'react-router-dom';
 //Framer Motion
 import { motion } from 'framer-motion';
 import { titleAnim, fade, photoAnim } from '../animation';
@@ -37,7 +35,7 @@ const AboutSection = (props) => {
                             <motion.h2 variants={titleAnim}>Software Developer</motion.h2>
                         </Hide>
                     </motion.div>
-                    <motion.p variants={fade}>I am a recent Computer Science and Business Administration graduate. I am interested in full stack development with an interest in ML.</motion.p>
+                    <motion.p variants={fade}>I am a Computer Science and Business Administration graduate interested in frontend and fullstack devlepment. In my free time I like to golf, crochet and climb.</motion.p>
                 </Title>
                 <Buttons>
                     <motion.button variants={fade} onClick={() => redirectClick("https://www.linkedin.com/in/michelle-loo/")}>LinkedIn</motion.button>

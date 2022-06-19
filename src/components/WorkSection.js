@@ -4,20 +4,19 @@ import React from 'react';
 import { About, Description } from "../styles";
 import styled from "styled-components";
 import { useScroll } from './useScroll';
-import { scrollReveal } from '../animation'
 
 //Animation
 import { motion } from 'framer-motion';
 import { titleAnim, fade } from '../animation';
 
 //Timeline
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
-import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
 const WorkSection = () => {
     const [element, controls] = useScroll();
@@ -26,7 +25,25 @@ const WorkSection = () => {
             <Description>
                 <h2>Work History</h2>
                 <TimelineDisplay>
-                    <Timeline align="alternate">
+                    <Timeline position="alternate">
+                    <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2021-2022</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://rockportnetworks.com/" target="_blank" rel="noreferrer">Rockport Networks</a>
+                                        <p>Frontend Developer</p>
+                                        <p>Developed new features for ClojureScript web application</p>
+                                    </div>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent>
                                 <p>2021</p>
@@ -118,6 +135,14 @@ const WorkSection = () => {
                         </TimelineItem>
                     </Timeline></TimelineDisplay>
                 <Cards>
+                    <Card>
+                        <div className="icon">
+                            <h3>Rockport Networks</h3>
+                        </div>
+                        <p>Frontend Developer</p>
+                        <p>Developed new features for ClojureScript web application</p>
+
+                    </Card>
                     <Card>
                         <div className="icon">
                             <h3>Schedulock</h3>

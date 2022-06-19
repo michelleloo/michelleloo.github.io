@@ -29,7 +29,7 @@ const GlobalStyle=createGlobalStyle`
         font-family: 'Inter', sans-serif;
 
         &:hover{
-            background-color: #23d007;
+            background-color: #E4F0D0;
             color:white;
         };
     }
