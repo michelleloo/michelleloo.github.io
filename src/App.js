@@ -6,8 +6,11 @@ import Nav from './components/Nav';
 import AboutUs from './pages/AboutUs';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+import BlogPost from './components/BlogPost';
+
 //Router
-import { Switch, Route, useLocation, BrowserRouter } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 //Animation
 import { AnimatePresence } from 'framer-motion';
@@ -17,25 +20,19 @@ function App() {
     let title = "Michelle Loo"
     document.title = title;
   });;
-  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>
-        <BrowserRouter>
-          <Switch location={location} key={location.pathname}>
-            <Route path="/" exact>
-              <AboutUs />
-            </Route>
-            <Route path="/projects" exact>
-              <Projects />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
-        </BrowserRouter>
+          <Routes>
+            <Route path="/" exact element={<AboutUs />}/>
+            <Route path="/projects" exact element={<Projects />}/>
+            <Route path="/contact" exact element={<Contact />}/>
+            <Route path="/blog" exact element={<Blog />}/>
+            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="*" element={<AboutUs />} />
+          </Routes>
       </AnimatePresence>
     </div >
   );

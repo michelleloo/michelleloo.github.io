@@ -1,0 +1,17 @@
+.reactMarkDown {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+}
+  
+.reactMarkDown ul {
+margin-top: 1em;
+}
+
+.reactMarkDown ul li {
+display: list-item;
+padding-left: 1rem;
+}
+  
