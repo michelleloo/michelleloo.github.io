@@ -1,0 +1,2 @@
+(this.webpackJsonpwebsite=this.webpackJsonpwebsite||[]).push([[6],{123:function(s,t,e){"use strict";e.r(t),t.default=e.p+"static/media/28-06-2022.f0d286b7.md"}}]);
+//# sourceMappingURL=6.47f93e80.chunk.js.map
