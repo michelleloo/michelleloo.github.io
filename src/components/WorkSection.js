@@ -26,7 +26,25 @@ const WorkSection = () => {
                 <h2>Work History</h2>
                 <TimelineDisplay>
                     <Timeline position="alternate">
-                    <TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2022-Present</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://syntronic.com/" target="_blank" rel="noreferrer">Syntronics</a>
+                                        <p>Frontend Developer</p>
+                                        <p>Currently working on a geospatial mapping platform for drones! Using a combination of React, Redux and Material Design UI.</p>
+                                    </div>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
                             <TimelineOppositeContent>
                                 <p>2021-2022</p>
                             </TimelineOppositeContent>
@@ -39,7 +57,7 @@ const WorkSection = () => {
                                     <div className="icon">
                                         <a href="https://rockportnetworks.com/" target="_blank" rel="noreferrer">Rockport Networks</a>
                                         <p>Frontend Developer</p>
-                                        <p>Developed new features for ClojureScript web application</p>
+                                        <p>Developed new features for ClojureScript web application to visualize packet network traffic. Used a combination of ClojureScript and Less.</p>
                                     </div>
                                 </Card>
                             </TimelineContent>
@@ -195,7 +213,6 @@ const Cards = styled.div`
     @media (max-width: 1300px){
         visibility: visible;
         display:flex;
-        
     } 
 `;
 const TimelineDisplay = styled.div`
