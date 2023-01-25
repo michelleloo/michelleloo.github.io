@@ -8,6 +8,7 @@ import chatbot from '../img/chatbot.png';
 import musicplayer from '../img/music-player.png';
 import kaggle from '../img/kaggle.png';
 import { motion } from 'framer-motion';
+import { MainButton } from '../styles';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "../animation";
 
 const Projects = () => {
@@ -40,8 +41,8 @@ const Projects = () => {
                     <Hide>
                         <motion.p variants={fade}>Music is pulled from copyright free music. Purpose was to design simple UI that I could use when needed to focus.</motion.p>
                         <Buttons>
-                            <motion.button variants={fade} onClick={() => redirectClick("https://github.com/michelleloo/react-player/")}>Code</motion.button>
-                            <motion.button variants={fade} onClick={() => redirectClick("https://michelleloo.github.io/react-player/")}>Live</motion.button>
+                            <MainButton variants={fade} onClick={() => redirectClick("https://github.com/michelleloo/react-player/")}>Code</MainButton>
+                            <MainButton variants={fade} onClick={() => redirectClick("https://michelleloo.github.io/react-player/")}>Live</MainButton>
                         </Buttons>
                     </Hide>
                     <Hide>
@@ -53,10 +54,10 @@ const Projects = () => {
                 <Project>
                     <Hide>
                         <motion.p>An AI Model built on Kaggle that tries to predict whether a student is an above average drinker (weekly).
-                        Uses Pandas library & Sklearn's decision models
-                        Also contains our own implementation of a linear regression model.</motion.p>
+                            Uses Pandas library & Sklearn's decision models
+                            Also contains our own implementation of a linear regression model.</motion.p>
                         <Buttons>
-                            <motion.button variants={fade} onClick={() => redirectClick("https://www.kaggle.com/syleehs/kernel0e566615e7/notebook")}>Code</motion.button>
+                            <MainButton variants={fade} onClick={() => redirectClick("https://www.kaggle.com/syleehs/kernel0e566615e7/notebook")}>Code</MainButton>
                         </Buttons>
                     </Hide>
                     <Hide>
@@ -69,7 +70,7 @@ const Projects = () => {
                     <Hide>
                         <motion.p>Node.JS chatbot built with the Microsoft Bot Framework. Used LUIS API to train NPL model and to converse with a chatbot to create appointments.</motion.p>
                         <Buttons>
-                            <motion.button variants={fade} onClick={() => redirectClick("https://github.com/michelleloo/schedule-it")}>Code</motion.button>
+                            <MainButton variants={fade} onClick={() => redirectClick("https://github.com/michelleloo/schedule-it")}>Code</MainButton>
                         </Buttons>
                     </Hide>
                     <Hide>
@@ -119,19 +120,7 @@ const Project = styled.div`
     } 
 `
 const Buttons = styled.div`
-    button{
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-        width: 10rem;
-        margin-left: 1rem;
-        border-radius: 1rem;
-        color:#23D997;
-        text-decoration: none;
-        font-size:1.1rem;
-    }    
-    button:hover{
-        color:#1a9b5d;
-    }    
+ 
 `
 const Hide = styled.div`
     overflow:hidden;

@@ -39,7 +39,7 @@ const WorkSection = () => {
                                     <div className="icon">
                                         <a href="https://syntronic.com/" target="_blank" rel="noreferrer">Syntronics</a>
                                         <p>Frontend Developer</p>
-                                        <p>Currently working on a geospatial mapping platform for drones! Using a combination of React, Redux and Material Design UI.</p>
+                                        <p>Working on a geospatial mapping platform for drones! Using a combination of React, Redux and Material Design UI.</p>
                                     </div>
                                 </Card>
                             </TimelineContent>
@@ -57,7 +57,7 @@ const WorkSection = () => {
                                     <div className="icon">
                                         <a href="https://rockportnetworks.com/" target="_blank" rel="noreferrer">Rockport Networks</a>
                                         <p>Frontend Developer</p>
-                                        <p>Developed new features for ClojureScript web application to visualize packet network traffic. Used a combination of ClojureScript and Less.</p>
+                                        <p>Developed new features for ClojureScript web application to visualize packet network traffic.</p>
                                     </div>
                                 </Card>
                             </TimelineContent>

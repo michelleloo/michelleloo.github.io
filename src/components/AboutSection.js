@@ -4,7 +4,7 @@ import home1 from '../img/home1.jpg'
 
 import styled from "styled-components";
 //Stlyes
-import { About, Description, Image, Hide } from '../styles';
+import { About, Description, Image, Hide, MainButton } from '../styles';
 
 //Framer Motion
 import { motion } from 'framer-motion';
@@ -35,11 +35,11 @@ const AboutSection = (props) => {
                             <motion.h2 variants={titleAnim}>Software Developer</motion.h2>
                         </Hide>
                     </motion.div>
-                    <motion.p variants={fade}>I am a Computer Science and Business Administration graduate interested in frontend and fullstack development. In my free time I like to golf, crochet and climb.</motion.p>
+                    <motion.p variants={fade}>I am a Frontend developer based in Ontario, Canada. Currently I am using React and Redux with Typescript. When i'm not coding you can usually find me golfing, crocheting or climbing!</motion.p>
                 </Title>
                 <Buttons>
-                    <motion.button variants={fade} onClick={() => redirectClick("https://www.linkedin.com/in/michelle-loo/")}>LinkedIn</motion.button>
-                    <motion.button variants={fade} onClick={() => redirectClick("https://github.com/michelleloo")}>Github</motion.button>
+                    <MainButton variants={fade} onClick={() => redirectClick("https://www.linkedin.com/in/michelle-loo/")}>LinkedIn</MainButton>
+                    <MainButton variants={fade} onClick={() => redirectClick("https://github.com/michelleloo")}>Github</MainButton>
                 </Buttons>
 
             </Description>
@@ -63,24 +63,16 @@ const Title = styled.div`
         }
         p{
             font-size: 15px;
+            padding: 3rem 0rem;
         }
     } 
+    p{
+        padding: 3rem 0rem 4rem 0rem;; 
+        line-height: 48px;
+    }
+    
 `;
 const Buttons = styled.div`
-    button{
-        width: 10rem;
-        margin-left: 1rem;
-        border-radius: 1rem;
-        font-size: 15px;
-        color:#23D997;
-        text-decoration: none;
-        @media (max-width: 700px){
-            margin-left:0rem;
-        } 
-    }
-    button:hover{
-        color:#1a9b5d;
-    }    
 `
 
 export default AboutSection;

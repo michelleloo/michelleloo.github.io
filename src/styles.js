@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion';
+import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "./animation";
+
 //Styled Components
 export const About = styled(motion.div)`
     min-height: 90vh;
@@ -51,4 +53,26 @@ export const Image = styled.div`
 `;
 export const Hide = styled.div`
     overflow: hidden;
+`;
+
+export const MainButton = styled(motion.button)`
+    font-weight: bold;
+    font-size: 1.1.rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #23d997;
+    background: transparent;
+    color: #23d997;
+    transition: all 0.5s ease;
+    font-family: 'Inter', sans-serif;
+    border-radius: 1rem;
+    font-size: 15px;
+    width: 10rem;
+    margin:1rem;
+    &:hover{
+        background-color: #00CB8A;
+        color: black;
+        border: 3px solid black;
+    };
+
 `;
