@@ -1,25 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {allPosts} from '../blog/ListofPosts.js'
+import { allPosts } from '../blog/ListofPosts.js'
 
-import { useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Blog = () => {
     const history = useNavigate();
     function redirectClick(id) {
-        // do something meaningful, Promises, if/else, whatever, and then
         history(`/blog/${id}`)
     }
     return (
         <Outer>
-            {allPosts.slice(0).reverse().map((post)=>(
-            <BlogEntry key={post.id} onClick={() => redirectClick(post.id)}>
-               <BlogTitle>
-                <h3>{post.title}</h3>
-                </BlogTitle>
-                <BlogDate>{post.date}</BlogDate>
-            </BlogEntry>
-          ))}
+            <p>Not much to see here yet, just starting a collection of ramblings</p>
+            {allPosts.slice(0).reverse().map((post) => (
+                <BlogEntry key={post.id} onClick={() => redirectClick(post.id)}>
+                    <BlogTitle>
+                        <h3>{post.title}</h3>
+                    </BlogTitle>
+                    <BlogDate>{post.date}</BlogDate>
+                </BlogEntry>
+            ))}
         </Outer>
     );
 };
@@ -45,5 +45,9 @@ const Outer = styled.div`
     align-items: center;
 
     margin-top: 2rem;
+    p{
+        color: white;
+        margin-bottom: 1rem;
+    }
 `
 export default Blog;
