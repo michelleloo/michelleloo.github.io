@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-/*  */
+/*                 <li>
+                    <Link to="/blog">Blog</Link>
+                    <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/blog" ? "100%" : "0%" }} />
+                </li> */
 const Nav = () => {
     const { pathname } = useLocation();
     return (
@@ -23,10 +26,7 @@ const Nav = () => {
                     <Link to="/contact">Contact</Link>
                     <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/contact" ? "100%" : "0%" }} />
                 </li>
-                <li>
-                    <Link to="/blog">Blog</Link>
-                    <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/blog" ? "100%" : "0%" }} />
-                </li>
+
 
 
             </ul>
