@@ -53,7 +53,7 @@ const Projects = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Project>
                     <Hide>
-                        <motion.p>An AI Model built on Kaggle that tries to predict whether a student is an above average drinker (weekly).
+                        <motion.p variants={fade}>An AI Model built on Kaggle that tries to predict whether a student is an above average drinker.
                             Uses Pandas library & Sklearn's decision models
                             Also contains our own implementation of a linear regression model.</motion.p>
                         <Buttons>

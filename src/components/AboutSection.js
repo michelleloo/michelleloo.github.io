@@ -35,7 +35,7 @@ const AboutSection = (props) => {
                             <motion.h2 variants={titleAnim}>Software Developer</motion.h2>
                         </Hide>
                     </motion.div>
-                    <motion.p variants={fade}>I am a Frontend developer based in Ontario, Canada. Currently I am using React and Redux with Typescript. When i'm not coding you can usually find me golfing, crocheting or climbing!</motion.p>
+                    <motion.p variants={fade}>At the moment I am using React and Redux with Typescript. When i'm not coding you can usually find me golfing, crocheting or climbing!</motion.p>
                 </Title>
                 <Buttons>
                     <MainButton variants={fade} onClick={() => redirectClick("https://www.linkedin.com/in/michelle-loo/")}>LinkedIn</MainButton>

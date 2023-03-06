@@ -155,6 +155,14 @@ const WorkSection = () => {
                 <Cards>
                     <Card>
                         <div className="icon">
+                            <h3>Syntronics</h3>
+                        </div>
+                        <p>Frontend Developer</p>
+                        <p>Working on a geospatial mapping platform for drones! Using a combination of React, Redux and Material Design UI</p>
+
+                    </Card>
+                    <Card>
+                        <div className="icon">
                             <h3>Rockport Networks</h3>
                         </div>
                         <p>Frontend Developer</p>
