@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import chatbot from '../img/chatbot.png';
 import musicplayer from '../img/music-player.png';
 import kaggle from '../img/kaggle.png';
+import ckWebsite from '../img/CK-website.png';
 import { motion } from 'framer-motion';
 import { MainButton } from '../styles';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "../animation";
@@ -53,13 +54,13 @@ const Projects = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Project>
                     <Hide>
-                        <motion.p variants={fade}>Personal Acting website built for my cousin</motion.p>
+                        <motion.p variants={fade}>Personal acting website built for my cousin</motion.p>
                         <Buttons>
                             <MainButton variants={fade} onClick={() => redirectClick("https://www.christinakennedy.ca/")}>Live</MainButton>
                         </Buttons>
                     </Hide>
                     <Hide>
-                        <motion.img variants={photoAnim} src={musicplayer} alt="music player" />
+                        <motion.img variants={photoAnim} src={ckWebsite} alt="music player" />
                     </Hide>
                 </Project>
                 <motion.h2 variants={fade}>Consumption Prediction</motion.h2>
@@ -128,6 +129,9 @@ const Project = styled.div`
     display:grid;
     grid-template-columns:  50% 50%;
     margin-bottom: 5rem;
+    p{
+        padding-right: 2rem;
+    }
     @media (max-width: 700px){
         grid-template-columns: 100;
     } 
