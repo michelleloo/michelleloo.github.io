@@ -49,6 +49,19 @@ const Projects = () => {
                         <motion.img variants={photoAnim} src={musicplayer} alt="music player" />
                     </Hide>
                 </Project>
+                <motion.h2 variants={fade}>Acting/Music Personal Portfolio</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Project>
+                    <Hide>
+                        <motion.p variants={fade}>Personal Acting website built for my cousin</motion.p>
+                        <Buttons>
+                            <MainButton variants={fade} onClick={() => redirectClick("https://www.christinakennedy.ca/")}>Live</MainButton>
+                        </Buttons>
+                    </Hide>
+                    <Hide>
+                        <motion.img variants={photoAnim} src={musicplayer} alt="music player" />
+                    </Hide>
+                </Project>
                 <motion.h2 variants={fade}>Consumption Prediction</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Project>

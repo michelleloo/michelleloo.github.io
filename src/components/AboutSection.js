@@ -22,7 +22,6 @@ const AboutSection = (props) => {
         <About>
             <Description>
                 <Title>
-
                     <motion.div>
                         <Hide>
                             <motion.h2 variants={titleAnim}>Hi! My name</motion.h2>
@@ -57,22 +56,33 @@ const AboutSection = (props) => {
     );
 }
 const Title = styled.div`
-    @media (max-width: 700px){
+    @media (max-width: 700px){ 
         h2{
             font-size: 20px;
+            text-align: center;
         }
         p{
             font-size: 15px;
-            padding: 3rem 0rem;
+            text-align: center;
+            padding: 3rem 5rem; 
         }
     } 
     p{
-        padding: 3rem 0rem 4rem 0rem;; 
         line-height: 48px;
     }
     
 `;
 const Buttons = styled.div`
+    display: flex;
+    @media (max-width: 700px){
+        flex-direction: column;
+        align-items: center;
+        button{
+            margin: 1rem;
+            padding: 1rem 2rem;
+        }
+    }
+
 `
 
 export default AboutSection;

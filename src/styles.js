@@ -24,7 +24,7 @@ export const Description = styled.div`
         font-weight: lighter;
     }
     @media (max-width: 1300px){
-        padding: 0;
+    padding-right: 0rem;
         button{
             margin: 2rem 0rem 5rem 0rem;
         }
@@ -45,11 +45,7 @@ export const Image = styled.div`
         border-radius: 30%;
         
     }
-    @media (max-width: 700px){
-        img{
-            width: 60%;
-        }
-    } 
+
 `;
 export const Hide = styled.div`
     overflow: hidden;
