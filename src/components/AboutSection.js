@@ -65,6 +65,10 @@ const Title = styled.div`
             font-size: 15px;
             text-align: center;
             padding: 3rem 5rem; 
+            @media (max-width: 700px){
+                padding: 1rem
+            }
+
         }
     } 
     p{
@@ -74,11 +78,24 @@ const Title = styled.div`
 `;
 const Buttons = styled.div`
     display: flex;
-    @media (max-width: 700px){
-        flex-direction: column;
-        align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    @media (max-width: 1024px){
+        margin: 0rem 2rem;
+        justify-content: space-evenly;
+
         button{
             margin: 1rem;
+            padding: 1rem 2rem;
+        }
+    }
+    @media (max-width: 700px){
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0rem 2rem;
+        button{
+            margin: 0.5rem;
             padding: 1rem 2rem;
         }
     }

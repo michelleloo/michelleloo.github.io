@@ -37,7 +37,7 @@ const WorkSection = () => {
                             <TimelineContent>
                                 <Card>
                                     <div className="icon">
-                                        <a href="https://syntronic.com/" target="_blank" rel="noreferrer">Syntronics</a>
+                                        <a href="https://www.kongsberggeospatial.com/" target="_blank" rel="noreferrer">Kongsberg Geospatial</a>
                                         <p>Frontend Developer</p>
                                         <p>Working on a geospatial mapping platform for drones! Using a combination of React, Redux and Material Design UI.</p>
                                     </div>
@@ -57,7 +57,7 @@ const WorkSection = () => {
                                     <div className="icon">
                                         <a href="https://rockportnetworks.com/" target="_blank" rel="noreferrer">Rockport Networks</a>
                                         <p>Frontend Developer</p>
-                                        <p>Developed new features for ClojureScript web application to visualize packet network traffic.</p>
+                                        <p>Developed new features for a ClojureScript web application which visualizes packet network traffic.</p>
                                     </div>
                                 </Card>
                             </TimelineContent>
@@ -112,7 +112,7 @@ const WorkSection = () => {
                                         <a href="https://www.magnetforensics.com/" target="_blank" rel="noreferrer">Magnet Forensics</a>
                                     </div>
                                     <p>Software Developer Co-op</p>
-                                    <p>Worked in Data Science team to train image recognition model. Built MongoDB store to classify and store images.</p>
+                                    <p>Worked in the Data Science team to train image recognition models. Built MongoDB store to classify and store images.</p>
                                 </Card>
                             </TimelineContent>
                         </TimelineItem>
@@ -130,7 +130,7 @@ const WorkSection = () => {
                                         <a href="https://www.cibc.com/en/personal-banking.html/" target="_blank" rel="noreferrer">CIBC Live Labs</a>
                                     </div>
                                     <p>Software Developer Co-op</p>
-                                    <p>Developed mobile application for office room bookings</p>
+                                    <p>Developed mobile application for office room bookings and built a POC crypto wallet application for bank customers</p>
                                 </Card>
                             </TimelineContent>
                         </TimelineItem>

@@ -20,7 +20,8 @@ function App() {
     let title = "Michelle Loo"
     document.title = title;
   });
-
+  //<Route path="/blog" exact element={<Blog />} />
+  //<Route path="/blog" exact element={<Blog />} />
   return (
     <div className="App">
       <GlobalStyle />
@@ -30,8 +31,7 @@ function App() {
           <Route path="/" exact element={<AboutUs />} />
           <Route path="/projects" exact element={<Projects />} />
           <Route path="/contact" exact element={<Contact />} />
-          <Route path="/blog" exact element={<Blog />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
+
           <Route path="*" element={<AboutUs />} />
         </Routes>
       </AnimatePresence>

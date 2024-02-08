@@ -24,16 +24,18 @@ const Nav = () => {
                     <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/contact" ? "100%" : "0%" }} />
                 </li>
 
-                <li>
-                    <Link to="/blog">Blog</Link>
-                    <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/blog" ? "100%" : "0%" }} />
-                </li>
+
 
             </ul>
         </StyledNav>
     )
 };
-
+/**
+ *                 <li>
+                    <Link to="/blog">Blog</Link>
+                    <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/blog" ? "100%" : "0%" }} />
+                </li>
+ */
 const StyledNav = styled.nav`
     min-height: 10vh;
     display: flex;
