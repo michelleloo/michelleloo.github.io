@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[35],{35:function(e,s,a){e.exports=a.p+"static/media/28-06-2022.4ae62b0a9a015c55a28f.md"}}]);

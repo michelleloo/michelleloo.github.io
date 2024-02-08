@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.c8ebd0b9.css",
-    "main.js": "/static/js/main.eb848fae.js",
-    "static/js/608.047f6516.chunk.js": "/static/js/608.047f6516.chunk.js",
-    "static/js/546.28fc5ae7.chunk.js": "/static/js/546.28fc5ae7.chunk.js",
-    "static/js/35.e8a5281b.chunk.js": "/static/js/35.e8a5281b.chunk.js",
-    "static/js/28.bfea9f00.chunk.js": "/static/js/28.bfea9f00.chunk.js",
-    "static/js/377.b7adef99.chunk.js": "/static/js/377.b7adef99.chunk.js",
+    "main.js": "/static/js/main.9157df45.js",
+    "static/js/292.c5396429.chunk.js": "/static/js/292.c5396429.chunk.js",
+    "static/js/660.3060d270.chunk.js": "/static/js/660.3060d270.chunk.js",
+    "static/js/928.08d42059.chunk.js": "/static/js/928.08d42059.chunk.js",
+    "static/js/144.80db36e2.chunk.js": "/static/js/144.80db36e2.chunk.js",
+    "static/js/864.637cc335.chunk.js": "/static/js/864.637cc335.chunk.js",
     "static/media/home1.jpg": "/static/media/home1.c5ae02888a500d4e9181.jpg",
     "static/media/CK-website.png": "/static/media/CK-website.237ded2b3223bafdbd17.png",
     "static/media/music-player.png": "/static/media/music-player.f701401c6dcf975e2b56.png",
@@ -19,11 +19,11 @@
     "static/media/29-06-2022.md": "/static/media/29-06-2022.3704673730eb47f997af.md",
     "static/media/07-07-2022.md": "/static/media/07-07-2022.5667c448704ac259575a.md",
     "main.c8ebd0b9.css.map": "/static/css/main.c8ebd0b9.css.map",
-    "main.eb848fae.js.map": "/static/js/main.eb848fae.js.map",
-    "377.b7adef99.chunk.js.map": "/static/js/377.b7adef99.chunk.js.map"
+    "main.9157df45.js.map": "/static/js/main.9157df45.js.map",
+    "864.637cc335.chunk.js.map": "/static/js/864.637cc335.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8ebd0b9.css",
-    "static/js/main.eb848fae.js"
+    "static/js/main.9157df45.js"
   ]
 }

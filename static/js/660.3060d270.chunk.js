@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[660],{660:(e,s,t)=>{e.exports=t.p+"static/media/23-06-2022.4425dca1780e6bdd4075.md"}}]);
