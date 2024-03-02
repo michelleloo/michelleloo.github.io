@@ -28,7 +28,7 @@ const WorkSection = () => {
                     <Timeline position="alternate">
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <p>2022-Present</p>
+                                <p>2023-Present</p>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot color="primary" variant="outlined" />
@@ -38,8 +38,26 @@ const WorkSection = () => {
                                 <Card>
                                     <div className="icon">
                                         <a href="https://www.kongsberggeospatial.com/" target="_blank" rel="noreferrer">Kongsberg Geospatial</a>
+                                        <p>Software Developer</p>
+                                        <p>Working on a geospatial mapping platform for drones and radars! Using a combination of React, Redux and Material Design UI.</p>
+                                    </div>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2022-2023</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://syntronic.com/" target="_blank" rel="noreferrer">Syntronics</a>
                                         <p>Frontend Developer</p>
-                                        <p>Working on a geospatial mapping platform for drones! Using a combination of React, Redux and Material Design UI.</p>
+                                        <p> Fulltime contractor working at Kongsberg Geospatial</p>
                                     </div>
                                 </Card>
                             </TimelineContent>
@@ -155,10 +173,18 @@ const WorkSection = () => {
                 <Cards>
                     <Card>
                         <div className="icon">
+                            <h3>Kongsberg Geospatial</h3>
+                        </div>
+                        <p>Software Developer</p>
+                        <p>Working on a geospatial mapping platform for drones and radars! Using a combination of React, Redux and Material Design UI</p>
+
+                    </Card>
+                    <Card>
+                        <div className="icon">
                             <h3>Syntronics</h3>
                         </div>
                         <p>Frontend Developer</p>
-                        <p>Working on a geospatial mapping platform for drones! Using a combination of React, Redux and Material Design UI</p>
+                        <p>Fulltime Contractor Working at Kongsberg Geospatial</p>
 
                     </Card>
                     <Card>
