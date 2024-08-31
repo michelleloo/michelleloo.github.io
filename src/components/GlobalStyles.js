@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     }
     span{
         font-weight:bold;
-        color:#23d997;
+        color:#6680C8;
         font-weight: bold;
     }
     p{

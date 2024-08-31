@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { useHistory } from 'react-router-dom';
-import { Link } from "react-router-dom";
 
 //Animation
 import chatbot from '../img/chatbot.png';
@@ -114,7 +112,7 @@ const Movie = styled(motion.div)`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
-        background: #23d997;
+        background: #6680C8;
         margin-bottom: 3rem;
     }
     img{
@@ -149,16 +147,16 @@ const Frame1 = styled(motion.div)`
     top:10%;
     width:100%;
     height:100vh;
-    background:#162919;
+    background:#17153B;
     z-index:2;
 `;
 const Frame2 = styled(Frame1)`
-    background:#2e5735;
+    background:#2E236C;
 `;
 const Frame3 = styled(Frame1)`
-    background: #61b46f;
+    background: #433D8B;
 `;
 const Frame4 = styled(Frame1)`
-    background: #8effa0 
+    background: #C8ACD6 
 `;
 export default Projects;

@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 import WorkSection from '../components/WorkSection';
-import Arrow from '../img/arrow-up-simple-svgrepo-com.svg';
 
 const AboutUs = () => {
     const [visible, setVisible] = useState(false)
@@ -57,13 +56,13 @@ const UpButton = styled.button`
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #23d997;
+    background-color: #6680C8;
     color: white;
     font-size: 20px;
     cursor: pointer;
     border: none;
     outline: none;
     &:hover {
-        background-color: #00CB8A;}
+        background-color: #6680C8;}
 `;
 

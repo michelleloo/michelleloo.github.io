@@ -86,7 +86,7 @@ const StyledNav = styled.nav`
 `;
 const Line = styled(motion.div)`
     height:0.3rem;
-    background: #23d997;
+    background: #6680C8;
     width: 0%;
     margin-top: 0.5rem;
 

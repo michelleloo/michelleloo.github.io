@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion';
-import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "./animation";
 
 //Styled Components
 export const About = styled(motion.div)`
@@ -56,9 +55,9 @@ export const MainButton = styled(motion.button)`
     font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #23d997;
+    border: 3px solid #6680C8;
     background: transparent;
-    color: #23d997;
+    color: #6680C8;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
     border-radius: 1rem;
@@ -66,7 +65,7 @@ export const MainButton = styled(motion.button)`
     width: 10rem;
     margin:1rem;
     &:hover{
-        background-color: #00CB8A;
+        background-color: #6680C8;
         color: black;
         border: 3px solid black;
     };

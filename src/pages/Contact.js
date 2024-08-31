@@ -2,10 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Contact = () => {
-    function redirectClick(url) {
-        // do something meaningful, Promises, if/else, whatever, and then
-        window.open(url, '_blank');
-    }
     return (
         <Outer>
             <Inner>
@@ -33,12 +29,12 @@ const Inner = styled.div`
     }
     a{
         border-radius: 1rem;
-        color:#23D997;
+        color:#6680C8;
         text-decoration: none;
         font-size: 50px;
     }    
     a:hover{
-        color:#1a9b5d;
+        color:#6478F0;
     }  
 `
 export default Contact;

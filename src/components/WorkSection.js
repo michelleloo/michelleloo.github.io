@@ -5,9 +5,6 @@ import { About, Description } from "../styles";
 import styled from "styled-components";
 import { useScroll } from './useScroll';
 
-//Animation
-import { motion } from 'framer-motion';
-import { titleAnim, fade } from '../animation';
 
 //Timeline
 import Timeline from '@mui/lab/Timeline';
@@ -28,7 +25,26 @@ const WorkSection = () => {
                     <Timeline position="alternate">
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <p>2023-Present</p>
+                                <p>2024-Present</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" variant="outlined" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Card>
+                                    <div className="icon">
+                                        <a href="https://www.shutterstock.com/" target="_blank" rel="noreferrer">Shutterstock</a>
+                                        <p>Software Engineer II</p>
+                                        <p>
+                                            Enhanced Next.js website by boosting customer engagement and retention through extensive A/B testing</p>
+                                    </div>
+                                </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>2023-2024</p>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot color="primary" variant="outlined" />
@@ -173,6 +189,14 @@ const WorkSection = () => {
                 <Cards>
                     <Card>
                         <div className="icon">
+                            <h3>Shutterstock</h3>
+                        </div>
+                        <p>Software Engineer II</p>
+                        <p> Enhanced Next.js website by boosting customer engagement and retention through extensive A/B testing</p>
+
+                    </Card>
+                    <Card>
+                        <div className="icon">
                             <h3>Kongsberg Geospatial</h3>
                         </div>
                         <p>Software Developer</p>
@@ -266,7 +290,7 @@ const Card = styled.div`
     flex-basis: auto;
     margin-bottom: 5rem;
     padding:2rem;
-    border: solid #23D997;
+    border: solid #6680C8;
     border-width: 1px;
     border-radius: 30px;
     .icon{
@@ -274,7 +298,7 @@ const Card = styled.div`
     a{
         font-size: 30px;
         margin-left: 1rem;
-        color:#23D997;
+        color:#6680C8;
         padding:1rem;
         border-bottom-color: coral;
         text-decoration: none;
