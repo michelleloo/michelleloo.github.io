@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import home1 from '../img/home1.jpg'
+import home1 from '../img/home1.webp'
 
 import styled from "styled-components";
 //Stlyes
